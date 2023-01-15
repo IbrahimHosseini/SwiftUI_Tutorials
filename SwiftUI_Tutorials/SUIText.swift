@@ -22,12 +22,23 @@ struct SUIText: View {
                 .padding()
                 .rotation3DEffect(.degrees(45), axis: (x: 1, y: 0, z: 0))
                 .shadow(color: .gray, radius: 5, x: 0, y: 8)
-
+            
             //Displaying Markdown Text
             Text("**This is how you bold a text**. *This is how you make text italic.* You can [click this link](https://www.appcoda.com) to go to appcoda.com")
                 .font(.title)
                 .padding()
+            Spacer()
+            
+            HStack {
+                Text("Joshua Tree National Park")
+                    .font(.subheadline)
+                Spacer()
+                Text("California")
+                    .font(.subheadline)
+            }
+            Spacer()
         }
+        .padding()
 
 
 
