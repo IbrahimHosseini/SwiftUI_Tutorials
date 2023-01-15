@@ -1,5 +1,5 @@
 //
-//  SwiftUIText.swift
+//  SUIText.swift
 //  SwiftUI_Tutorials
 //
 //  Created by Ibrahim Hosseini on 1/14/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftUIText: View {
+struct SUIText: View {
     var body: some View {
 
         VStack {
@@ -34,8 +34,8 @@ struct SwiftUIText: View {
     }
 }
 
-struct SwiftUIText_Previews: PreviewProvider {
+struct SUIText_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIText()
+        SUIText()
     }
 }

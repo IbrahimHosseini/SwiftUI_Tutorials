@@ -10,7 +10,7 @@
 		03F6B6C92972F10A00A5F64A /* SwiftUI_TutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B6C82972F10A00A5F64A /* SwiftUI_TutorialsApp.swift */; };
 		03F6B6CD2972F10B00A5F64A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B6CC2972F10B00A5F64A /* Assets.xcassets */; };
 		03F6B6D02972F10B00A5F64A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B6CF2972F10B00A5F64A /* Preview Assets.xcassets */; };
-		03F6B6D72972F13A00A5F64A /* SwiftUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B6D62972F13A00A5F64A /* SwiftUIText.swift */; };
+		03F6B6D72972F13A00A5F64A /* SUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B6D62972F13A00A5F64A /* SUIText.swift */; };
 		03F6B6DB2972F77700A5F64A /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B6DA2972F77700A5F64A /* Nunito-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -19,7 +19,7 @@
 		03F6B6C82972F10A00A5F64A /* SwiftUI_TutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TutorialsApp.swift; sourceTree = "<group>"; };
 		03F6B6CC2972F10B00A5F64A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03F6B6CF2972F10B00A5F64A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		03F6B6D62972F13A00A5F64A /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
+		03F6B6D62972F13A00A5F64A /* SUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIText.swift; sourceTree = "<group>"; };
 		03F6B6DA2972F77700A5F64A /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		03F6B6DC2972F8C400A5F64A /* SwiftUI-Tutorials-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwiftUI-Tutorials-info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -59,7 +59,7 @@
 				03F6B6CC2972F10B00A5F64A /* Assets.xcassets */,
 				03F6B6CE2972F10B00A5F64A /* Preview Content */,
 				03F6B6C82972F10A00A5F64A /* SwiftUI_TutorialsApp.swift */,
-				03F6B6D62972F13A00A5F64A /* SwiftUIText.swift */,
+				03F6B6D62972F13A00A5F64A /* SUIText.swift */,
 			);
 			path = SwiftUI_Tutorials;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F6B6D72972F13A00A5F64A /* SwiftUIText.swift in Sources */,
+				03F6B6D72972F13A00A5F64A /* SUIText.swift in Sources */,
 				03F6B6C92972F10A00A5F64A /* SwiftUI_TutorialsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
