@@ -81,10 +81,10 @@
 		0F84D7C729783E26007278CC /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				0F84D7C529783E10007278CC /* SUIButton.swift */,
 				0F8D84E42973DF9500924B99 /* SUIImage.swift */,
 				0F57753C2977D3F600DEE82C /* SUILabel.swift */,
 				03F6B6D62972F13A00A5F64A /* SUIText.swift */,
-				0F84D7C529783E10007278CC /* SUIButton.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
