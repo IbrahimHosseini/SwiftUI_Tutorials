@@ -59,13 +59,13 @@
 		03F6B6C72972F10A00A5F64A /* SwiftUI_Tutorials */ = {
 			isa = PBXGroup;
 			children = (
-				03F6B6DC2972F8C400A5F64A /* SwiftUI-Tutorials-info.plist */,
 				03F6B6CC2972F10B00A5F64A /* Assets.xcassets */,
 				03F6B6CE2972F10B00A5F64A /* Preview Content */,
-				03F6B6C82972F10A00A5F64A /* SwiftUI_TutorialsApp.swift */,
-				03F6B6D62972F13A00A5F64A /* SUIText.swift */,
 				0F8D84E42973DF9500924B99 /* SUIImage.swift */,
 				0F57753C2977D3F600DEE82C /* SUILabel.swift */,
+				03F6B6D62972F13A00A5F64A /* SUIText.swift */,
+				03F6B6C82972F10A00A5F64A /* SwiftUI_TutorialsApp.swift */,
+				03F6B6DC2972F8C400A5F64A /* SwiftUI-Tutorials-info.plist */,
 			);
 			path = SwiftUI_Tutorials;
 			sourceTree = "<group>";
