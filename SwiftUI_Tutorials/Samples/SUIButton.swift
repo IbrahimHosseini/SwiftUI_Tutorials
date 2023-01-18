@@ -11,14 +11,10 @@ struct SUIButton: View {
 
     @State var colorMe = false
 
-    @State private var selectedColor = Color.gray
-
-    @State private var message = ""
 
     var body: some View {
-        VStack(spacing: 32) {
-            
-            Spacer()
+        VStack(spacing: 64) {
+
             Button("Tap on me to change the color") {
                 colorMe.toggle()
             }
@@ -68,36 +64,6 @@ struct SUIButton: View {
                         .border(.pink, width: 2)
                 }
             }
-
-            Text(message)
-            Picker("", selection: $message) {
-                Text("Happy").tag("happy")
-                Text("Sad").tag("sad")
-                Text("Bored").tag("bored")
-            }
-            .padding()
-            .pickerStyle(SegmentedPickerStyle())
-            .onChange(of: message) { newValue in
-                switch newValue {
-                case "happy": message = "Be happy and joyous"
-                case "sad": message = "Life can be a struggle at time"
-                case "bored": message = "Look for your purpose"
-                default: break
-                }
-            }
-
-
-            Rectangle()
-                .fill(selectedColor)
-
-            Picker("Favorite color",
-                   selection: $selectedColor) {
-                Text("Red").tag(Color.red)
-                Text("Green").tag(Color.green)
-                Text("Blue").tag(Color.blue)
-                Text("Yellow").tag(Color.yellow)
-            } .pickerStyle(SegmentedPickerStyle())
-
         }
         
     }
