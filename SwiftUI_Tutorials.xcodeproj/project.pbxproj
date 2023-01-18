@@ -13,6 +13,7 @@
 		03F6B6D72972F13A00A5F64A /* SUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B6D62972F13A00A5F64A /* SUIText.swift */; };
 		03F6B6DB2972F77700A5F64A /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B6DA2972F77700A5F64A /* Nunito-Regular.ttf */; };
 		0F57753D2977D3F600DEE82C /* SUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57753C2977D3F600DEE82C /* SUILabel.swift */; };
+		0F84D7C629783E10007278CC /* SUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F84D7C529783E10007278CC /* SUIButton.swift */; };
 		0F8D84E52973DF9500924B99 /* SUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D84E42973DF9500924B99 /* SUIImage.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		03F6B6DA2972F77700A5F64A /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		03F6B6DC2972F8C400A5F64A /* SwiftUI-Tutorials-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwiftUI-Tutorials-info.plist"; sourceTree = SOURCE_ROOT; };
 		0F57753C2977D3F600DEE82C /* SUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUILabel.swift; sourceTree = "<group>"; };
+		0F84D7C529783E10007278CC /* SUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIButton.swift; sourceTree = "<group>"; };
 		0F8D84E42973DF9500924B99 /* SUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,9 +63,7 @@
 			children = (
 				03F6B6CC2972F10B00A5F64A /* Assets.xcassets */,
 				03F6B6CE2972F10B00A5F64A /* Preview Content */,
-				0F8D84E42973DF9500924B99 /* SUIImage.swift */,
-				0F57753C2977D3F600DEE82C /* SUILabel.swift */,
-				03F6B6D62972F13A00A5F64A /* SUIText.swift */,
+				0F84D7C729783E26007278CC /* Samples */,
 				03F6B6C82972F10A00A5F64A /* SwiftUI_TutorialsApp.swift */,
 				03F6B6DC2972F8C400A5F64A /* SwiftUI-Tutorials-info.plist */,
 			);
@@ -76,6 +76,17 @@
 				03F6B6CF2972F10B00A5F64A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0F84D7C729783E26007278CC /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				0F8D84E42973DF9500924B99 /* SUIImage.swift */,
+				0F57753C2977D3F600DEE82C /* SUILabel.swift */,
+				03F6B6D62972F13A00A5F64A /* SUIText.swift */,
+				0F84D7C529783E10007278CC /* SUIButton.swift */,
+			);
+			path = Samples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F6B6D72972F13A00A5F64A /* SUIText.swift in Sources */,
+				0F84D7C629783E10007278CC /* SUIButton.swift in Sources */,
 				03F6B6C92972F10A00A5F64A /* SwiftUI_TutorialsApp.swift in Sources */,
 				0F57753D2977D3F600DEE82C /* SUILabel.swift in Sources */,
 				0F8D84E52973DF9500924B99 /* SUIImage.swift in Sources */,
