@@ -11,6 +11,8 @@ struct SUIGestures: View {
 
     @State private var changeMe = false
 
+    @State private var pressingState = "None"
+
     var body: some View {
         VStack {
             Rectangle()
@@ -19,6 +21,14 @@ struct SUIGestures: View {
                 .onTapGesture(count: 2) {
                     changeMe.toggle()
                 }
+                .onLongPressGesture(minimumDuration: 2,
+                                    maximumDistance: 2,
+                                    pressing: { pressing in
+                    pressingState = pressing ? "Pressing" : "None"
+                }) {
+                    changeMe.toggle()
+                }
+            Text("Pressing state is \(pressingState)")
         }
     }
 }
