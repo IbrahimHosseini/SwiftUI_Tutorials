@@ -10,6 +10,7 @@ import SwiftUI
 struct SUIPicker: View {
     @State private var message = ""
     @State private var selectedColor = Color.gray
+    @State private var choice = 0.0
 
     var body: some View {
         VStack {
@@ -19,7 +20,6 @@ struct SUIPicker: View {
                 Text("Sad").tag("sad")
                 Text("Bored").tag("bored")
             }
-            .padding()
             .pickerStyle(SegmentedPickerStyle())
             .onChange(of: message) { newValue in
                 switch newValue {
@@ -35,6 +35,7 @@ struct SUIPicker: View {
 
             Rectangle()
                 .fill(selectedColor)
+                .frame(height: 300)
 
             Picker("Favorite color",
                    selection: $selectedColor) {
@@ -44,7 +45,21 @@ struct SUIPicker: View {
                 Text("Yellow").tag(Color.yellow)
             } .pickerStyle(SegmentedPickerStyle())
 
+            Spacer()
+
+            Picker("Picker", selection: $choice) {
+                Text("Bird").tag(1.5)
+                Text("Cat").tag(2.8364)
+                Text("Dog").tag(9.43)
+                Text("Lizard").tag(4.63)
+                Text("Hamster").tag(5.24)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+
+            Text("Your choice is \(choice)")
+
         }
+        .padding()
     }
 }
 
