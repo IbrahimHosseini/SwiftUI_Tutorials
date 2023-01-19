@@ -15,11 +15,13 @@ struct SUIGestures: View {
     @State private var tempValue: CGFloat = 0
     @State private var finalValue: CGFloat = 1
 
+    @State private var degree = 0.0
+
     var body: some View {
         VStack {
 
             Rectangle()
-                .frame(width: 300, height: 200)
+                .frame(width: 300, height: 100)
                 .foregroundColor(changeMe ? .red : .green)
                 .onTapGesture(count: 2) {
                     changeMe.toggle()
@@ -34,20 +36,39 @@ struct SUIGestures: View {
             Text("Pressing state is \(pressingState)")
 
             Divider()
+            HStack {
+                Image(systemName: "star.fill")
+                    .font(.system(size: 100))
+                    .foregroundColor(.pink)
+                    .scaleEffect(tempValue + finalValue)
+                    .gesture(MagnificationGesture()
+                        .onChanged{ amount in
+                            tempValue = amount - 1
+                        }
+                        .onEnded{ amount in
+                            finalValue += tempValue
+                            tempValue = 0
+                        }
+                    )
 
-            Image(systemName: "star.fill")
-                .font(.system(size: 200))
-                .foregroundColor(.pink)
-                .scaleEffect(tempValue + finalValue)
-                .gesture(MagnificationGesture()
-                    .onChanged{ amount in
-                        tempValue = amount - 1
-                    }
-                    .onEnded{ amount in
-                        finalValue += tempValue
-                        tempValue = 0
-                    }
-                )
+                Divider()
+
+                Image(systemName: "steeringwheel")
+                    .font(.system(size: 100))
+                    .foregroundColor(.black)
+                    .rotationEffect(Angle.degrees(degree))
+                    .gesture(RotationGesture()
+                        .onChanged{ angle in
+                            degree = angle.degrees
+                        }
+                        .onEnded{ amount in
+                            finalValue += tempValue
+                            tempValue = 0
+                        }
+                    )
+            }
+
+            Divider()
 
         }
     }
