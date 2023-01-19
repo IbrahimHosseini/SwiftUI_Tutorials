@@ -19,7 +19,6 @@ struct SUIDatePicker: View {
 
     var formater = DateFormatter()
 
-
     var body: some View {
 
 
@@ -43,6 +42,9 @@ struct SUIDatePicker: View {
                        selection: $date,
                        displayedComponents: [.hourAndMinute])
                 .datePickerStyle(.compact)
+                .onAppear {
+                    formater.timeStyle = .full
+                }
 
         }
         .padding()
