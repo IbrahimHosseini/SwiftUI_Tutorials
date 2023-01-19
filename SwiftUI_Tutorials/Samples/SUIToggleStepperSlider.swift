@@ -12,8 +12,10 @@ struct SUIToggleStepperSlider: View {
     @State private var bluetooth = true
     @State private var hotspot = true
 
+    @State private var newValue = 0
+
     var body: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 32) {
             VStack(spacing: 16) {
                 Toggle("Wi-fi", isOn: $wifi)
 
@@ -28,7 +30,18 @@ struct SUIToggleStepperSlider: View {
             }
 
             VStack {
-
+                Stepper(value: $newValue,
+                        in: 0...100,
+                        step: 10) {
+                    Label {
+                        Text("Number")
+                            .fontWeight(.thin)
+                        Text("\(newValue)")
+                            .bold()
+                    } icon: {
+                        Image(systemName: "digitalcrown.horizontal.arrow.counterclockwise.fill")
+                    }
+                }
             }
         }
         .padding()
