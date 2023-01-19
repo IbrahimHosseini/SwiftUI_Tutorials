@@ -17,6 +17,9 @@ struct SUIGestures: View {
 
     @State private var degree = 0.0
 
+    @State private var circlePosition = CGPoint(x: 150, y: 150)
+    @State private var circleLabel = "150, 150"
+
     var body: some View {
         VStack {
 
@@ -42,10 +45,10 @@ struct SUIGestures: View {
                     .foregroundColor(.pink)
                     .scaleEffect(tempValue + finalValue)
                     .gesture(MagnificationGesture()
-                        .onChanged{ amount in
+                        .onChanged { amount in
                             tempValue = amount - 1
                         }
-                        .onEnded{ amount in
+                        .onEnded { amount in
                             finalValue += tempValue
                             tempValue = 0
                         }
@@ -58,7 +61,7 @@ struct SUIGestures: View {
                     .foregroundColor(.black)
                     .rotationEffect(Angle.degrees(degree))
                     .gesture(RotationGesture()
-                        .onChanged{ angle in
+                        .onChanged { angle in
                             degree = angle.degrees
                         }
                         .onEnded{ amount in
@@ -69,6 +72,24 @@ struct SUIGestures: View {
             }
 
             Divider()
+            HStack {
+                Circle()
+                    .fill(.indigo)
+                    .frame(width: 100, height: 100)
+                    .opacity(0.9)
+                    .position(circlePosition)
+                    .gesture(DragGesture()
+                        .onChanged { value in
+                            circlePosition = value.location
+                            circleLabel = "\(Int(value.location.x)), \(Int(value.location.y))"
+                        }
+                    )
+
+                Divider()
+
+                Text(circleLabel)
+                    .padding()
+            }
 
         }
     }
