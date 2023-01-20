@@ -19,6 +19,7 @@
 		03F6B6E62979EFC800A5F64A /* SUIMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B6E52979EFC800A5F64A /* SUIMenu.swift */; };
 		03F6B6EA2979F98500A5F64A /* SUIGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B6E92979F98500A5F64A /* SUIGestures.swift */; };
 		03F6B6EC297A99FB00A5F64A /* SUIAlertActionSheetContextualMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B6EB297A99FB00A5F64A /* SUIAlertActionSheetContextualMenu.swift */; };
+		03F6B6EE297AA4E000A5F64A /* SUIList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B6ED297AA4E000A5F64A /* SUIList.swift */; };
 		0F57753D2977D3F600DEE82C /* SUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57753C2977D3F600DEE82C /* SUILabel.swift */; };
 		0F84D7C629783E10007278CC /* SUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F84D7C529783E10007278CC /* SUIButton.swift */; };
 		0F8D84E52973DF9500924B99 /* SUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D84E42973DF9500924B99 /* SUIImage.swift */; };
@@ -39,6 +40,7 @@
 		03F6B6E52979EFC800A5F64A /* SUIMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIMenu.swift; sourceTree = "<group>"; };
 		03F6B6E92979F98500A5F64A /* SUIGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIGestures.swift; sourceTree = "<group>"; };
 		03F6B6EB297A99FB00A5F64A /* SUIAlertActionSheetContextualMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIAlertActionSheetContextualMenu.swift; sourceTree = "<group>"; };
+		03F6B6ED297AA4E000A5F64A /* SUIList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIList.swift; sourceTree = "<group>"; };
 		0F57753C2977D3F600DEE82C /* SUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUILabel.swift; sourceTree = "<group>"; };
 		0F84D7C529783E10007278CC /* SUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIButton.swift; sourceTree = "<group>"; };
 		0F8D84E42973DF9500924B99 /* SUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIImage.swift; sourceTree = "<group>"; };
@@ -95,17 +97,18 @@
 		0F84D7C729783E26007278CC /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				03F6B6EB297A99FB00A5F64A /* SUIAlertActionSheetContextualMenu.swift */,
 				0F84D7C529783E10007278CC /* SUIButton.swift */,
 				03F6B6E12979D6BE00A5F64A /* SUIDatePicker.swift */,
 				03F6B6E92979F98500A5F64A /* SUIGestures.swift */,
 				0F8D84E42973DF9500924B99 /* SUIImage.swift */,
 				0F57753C2977D3F600DEE82C /* SUILabel.swift */,
+				03F6B6ED297AA4E000A5F64A /* SUIList.swift */,
 				03F6B6E52979EFC800A5F64A /* SUIMenu.swift */,
 				03F6B6DF2978991C00A5F64A /* SUIPicker.swift */,
 				03F6B6D62972F13A00A5F64A /* SUIText.swift */,
 				03F6B6DD29788DEA00A5F64A /* SUITextFields.swift */,
 				03F6B6E32979E23E00A5F64A /* SUIToggleStepperSlider.swift */,
-				03F6B6EB297A99FB00A5F64A /* SUIAlertActionSheetContextualMenu.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				0F84D7C629783E10007278CC /* SUIButton.swift in Sources */,
 				03F6B6EC297A99FB00A5F64A /* SUIAlertActionSheetContextualMenu.swift in Sources */,
 				03F6B6C92972F10A00A5F64A /* SwiftUI_TutorialsApp.swift in Sources */,
+				03F6B6EE297AA4E000A5F64A /* SUIList.swift in Sources */,
 				03F6B6E22979D6BE00A5F64A /* SUIDatePicker.swift in Sources */,
 				03F6B6E62979EFC800A5F64A /* SUIMenu.swift in Sources */,
 				03F6B6E02978991C00A5F64A /* SUIPicker.swift in Sources */,
