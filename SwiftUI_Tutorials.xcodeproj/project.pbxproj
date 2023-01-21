@@ -97,6 +97,7 @@
 			children = (
 				03F6B6CC2972F10B00A5F64A /* Assets.xcassets */,
 				03F6B6CE2972F10B00A5F64A /* Preview Content */,
+				0F8FC0B4297BC379002B5D67 /* Landmarks */,
 				0F84D7C729783E26007278CC /* Samples */,
 				03F6B6C82972F10A00A5F64A /* SwiftUI_TutorialsApp.swift */,
 				03F6B6DC2972F8C400A5F64A /* SwiftUI-Tutorials-info.plist */,
@@ -147,7 +148,6 @@
 				03F6B6D62972F13A00A5F64A /* SUIText.swift */,
 				03F6B6DD29788DEA00A5F64A /* SUITextFields.swift */,
 				03F6B6E32979E23E00A5F64A /* SUIToggleStepperSlider.swift */,
-				0F8FC0B4297BC379002B5D67 /* Landmarks */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
