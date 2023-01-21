@@ -9,10 +9,12 @@ import SwiftUI
 
 struct LandmarkList: View {
 
+    @EnvironmentObject var modelData: ModelData
+
     @State private var showFavoriteOnly = false
 
     var filteredLandmarks: [Landmark] {
-        landmarks.filter { (!showFavoriteOnly || $0.isFavorite) }
+        modelData.landmarks.filter { (!showFavoriteOnly || $0.isFavorite) }
     }
 
 
@@ -42,5 +44,6 @@ struct LandmarkList: View {
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         LandmarkList()
+            .environmentObject(ModelData())
     }
 }
