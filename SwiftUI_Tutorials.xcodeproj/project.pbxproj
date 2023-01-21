@@ -145,7 +145,6 @@
 			children = (
 				0F8FC0BB297BCA79002B5D67 /* Landmark.swift */,
 				0F8FC0BD297BCC29002B5D67 /* ModelData.swift */,
-				0F8FC0C6297BD497002B5D67 /* LandmarkList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +160,7 @@
 		0F8FC0C1297BCDD0002B5D67 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0F8FC0C6297BD497002B5D67 /* LandmarkList.swift */,
 				0F8FC0B5297BC392002B5D67 /* CircleImage.swift */,
 				0F8FC0B2297BC19B002B5D67 /* LandmarkDetail.swift */,
 				0F8FC0B7297BC439002B5D67 /* MapView.swift */,
