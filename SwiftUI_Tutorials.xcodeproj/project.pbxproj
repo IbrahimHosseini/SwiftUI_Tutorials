@@ -173,8 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				0F552BF029810591004D4969 /* GraphCapsule.swift */,
-				0F552BF129810591004D4969 /* HikeGraph.swift */,
 				0F552BF229810591004D4969 /* HikeDetail.swift */,
+				0F552BF129810591004D4969 /* HikeGraph.swift */,
 				0F552BF329810591004D4969 /* HikeView.swift */,
 			);
 			path = Hikes;
@@ -191,11 +191,11 @@
 				0F57753C2977D3F600DEE82C /* SUILabel.swift */,
 				03F6B6ED297AA4E000A5F64A /* SUIList.swift */,
 				03F6B6E52979EFC800A5F64A /* SUIMenu.swift */,
+				0F552BE7297FCA42004D4969 /* SUIPath.swift */,
 				03F6B6DF2978991C00A5F64A /* SUIPicker.swift */,
 				03F6B6D62972F13A00A5F64A /* SUIText.swift */,
 				03F6B6DD29788DEA00A5F64A /* SUITextFields.swift */,
 				03F6B6E32979E23E00A5F64A /* SUIToggleStepperSlider.swift */,
-				0F552BE7297FCA42004D4969 /* SUIPath.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";

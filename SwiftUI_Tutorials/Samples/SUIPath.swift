@@ -9,6 +9,25 @@ import SwiftUI
 
 struct SUIPath: View {
     var body: some View {
+
+        Path { path in
+            path.move(to: .zero)
+
+            path.addQuadCurve(to: CGPoint(x: 100, y: 100),
+                              control: CGPoint(x: 100, y: 0))
+
+
+            path.move(to: .zero)
+            path.addCurve(to: CGPoint(x: 100, y: 100),
+                          control1: CGPoint(x: 100, y: 0),
+                          control2: CGPoint(x: 0, y: 100))
+
+            path.move(to: .zero)
+            path.addLine(to: CGPoint(x: 100, y: 0))
+            path.addLine(to: CGPoint(x: 100, y: 100))
+            path.closeSubpath()
+        }
+        .stroke()
         
         GeometryReader { geometry in
             let width = geometry.size.width * 0.25
@@ -25,9 +44,8 @@ struct SUIPath: View {
             }
             .fill(LinearGradient(
                 colors: [Self.gradientStart, Self.gradientEnd],
-                                 startPoint: UnitPoint(x: 0.5, y: 0.0),
-                                 endPoint: UnitPoint(x: 0.5, y: 0.2)))
-            
+                startPoint: UnitPoint(x: 0.5, y: 0.0),
+                endPoint: UnitPoint(x: 0.5, y: 0.2)))
             
         }
     }
