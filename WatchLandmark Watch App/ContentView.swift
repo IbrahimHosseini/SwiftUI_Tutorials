@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  WatchLandmarks Watch App
+//  WatchLandmark Watch App
 //
-//  Created by Ibrahim Hosseini on 1/27/23.
+//  Created by Ibrahim Hosseini on 2/1/23.
 //
 
 import SwiftUI
