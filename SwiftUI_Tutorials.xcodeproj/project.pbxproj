@@ -93,6 +93,8 @@
 		0F8FC0C7297BD497002B5D67 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FC0C6297BD497002B5D67 /* LandmarkList.swift */; };
 		0F8FC0CA297D15F2002B5D67 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FC0C9297D15F2002B5D67 /* HexagonParameters.swift */; };
 		0F8FC0CC297D1CC8002B5D67 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FC0CB297D1CC8002B5D67 /* BadgeBackground.swift */; };
+		0FDEB432299A0C2C003EEA1A /* LandmarksCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDEB431299A0C2C003EEA1A /* LandmarksCommands.swift */; };
+		0FDEB433299A0C2C003EEA1A /* LandmarksCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDEB431299A0C2C003EEA1A /* LandmarksCommands.swift */; };
 		0FF3F8A5298A44CB002D8FDE /* SearchableBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3F8A4298A44CB002D8FDE /* SearchableBookViewModel.swift */; };
 		0FF3F8A7298A4A7A002D8FDE /* SearchableBooksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3F8A6298A4A7A002D8FDE /* SearchableBooksListView.swift */; };
 /* End PBXBuildFile section */
@@ -165,6 +167,7 @@
 		0F8FC0C6297BD497002B5D67 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		0F8FC0C9297D15F2002B5D67 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		0F8FC0CB297D1CC8002B5D67 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
+		0FDEB431299A0C2C003EEA1A /* LandmarksCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksCommands.swift; sourceTree = "<group>"; };
 		0FF3F8A4298A44CB002D8FDE /* SearchableBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableBookViewModel.swift; sourceTree = "<group>"; };
 		0FF3F8A6298A4A7A002D8FDE /* SearchableBooksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableBooksListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -413,10 +416,19 @@
 				03F6B6F1297C86CB00A5F64A /* Helper */,
 				0F552BEF29810591004D4969 /* Hikes */,
 				03F6B6F2297C86D800A5F64A /* Landmarks */,
-				03F6B7062981D40100A5F64A /* Profile */,
+				0FDEB42E299A0B9D003EEA1A /* MacLandmarks */,
 				03F6B7112983354D00A5F64A /* PageView */,
+				03F6B7062981D40100A5F64A /* Profile */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0FDEB42E299A0B9D003EEA1A /* MacLandmarks */ = {
+			isa = PBXGroup;
+			children = (
+				0FDEB431299A0C2C003EEA1A /* LandmarksCommands.swift */,
+			);
+			path = MacLandmarks;
 			sourceTree = "<group>";
 		};
 		0FF3F89D2988F0EB002D8FDE /* List */ = {
@@ -574,6 +586,7 @@
 				033FA65A298B0688005A72D7 /* MapView.swift in Sources */,
 				033FA655298B0688005A72D7 /* SwiftUI_TutorialsApp.swift in Sources */,
 				033FA663298B08A4005A72D7 /* LandmarkDetail.swift in Sources */,
+				0FDEB433299A0C2C003EEA1A /* LandmarksCommands.swift in Sources */,
 				033FA65C298B0765005A72D7 /* Landmark.swift in Sources */,
 				033FA65B298B0688005A72D7 /* LandmarkList.swift in Sources */,
 				033FA657298B0688005A72D7 /* LandmarkRow.swift in Sources */,
@@ -609,6 +622,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F552BF429810591004D4969 /* GraphCapsule.swift in Sources */,
+				0FDEB432299A0C2C003EEA1A /* LandmarksCommands.swift in Sources */,
 				03F6B708298319CF00A5F64A /* ProfileEditor.swift in Sources */,
 				0F8FC0C3297BCE1D002B5D67 /* LandmarkRow.swift in Sources */,
 				03F6B6D72972F13A00A5F64A /* SUIText.swift in Sources */,
@@ -671,7 +685,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacLandmarks/Preview Content\"";
-				DEVELOPMENT_TEAM = 96S2DF9S9R;
+				DEVELOPMENT_TEAM = HZPB8ZR67K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -700,7 +714,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacLandmarks/Preview Content\"";
-				DEVELOPMENT_TEAM = 96S2DF9S9R;
+				DEVELOPMENT_TEAM = HZPB8ZR67K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
