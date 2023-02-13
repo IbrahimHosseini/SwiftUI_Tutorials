@@ -95,6 +95,7 @@
 		0F8FC0CC297D1CC8002B5D67 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FC0CB297D1CC8002B5D67 /* BadgeBackground.swift */; };
 		0FDEB432299A0C2C003EEA1A /* LandmarksCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDEB431299A0C2C003EEA1A /* LandmarksCommands.swift */; };
 		0FDEB433299A0C2C003EEA1A /* LandmarksCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDEB431299A0C2C003EEA1A /* LandmarksCommands.swift */; };
+		0FDEB438299A15A9003EEA1A /* LandmarkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDEB437299A15A9003EEA1A /* LandmarkSettings.swift */; };
 		0FF3F8A5298A44CB002D8FDE /* SearchableBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3F8A4298A44CB002D8FDE /* SearchableBookViewModel.swift */; };
 		0FF3F8A7298A4A7A002D8FDE /* SearchableBooksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3F8A6298A4A7A002D8FDE /* SearchableBooksListView.swift */; };
 /* End PBXBuildFile section */
@@ -168,6 +169,7 @@
 		0F8FC0C9297D15F2002B5D67 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		0F8FC0CB297D1CC8002B5D67 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 		0FDEB431299A0C2C003EEA1A /* LandmarksCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksCommands.swift; sourceTree = "<group>"; };
+		0FDEB437299A15A9003EEA1A /* LandmarkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkSettings.swift; sourceTree = "<group>"; };
 		0FF3F8A4298A44CB002D8FDE /* SearchableBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableBookViewModel.swift; sourceTree = "<group>"; };
 		0FF3F8A6298A4A7A002D8FDE /* SearchableBooksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableBooksListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -297,6 +299,7 @@
 				0F8FC0B2297BC19B002B5D67 /* LandmarkDetail.swift */,
 				0F8FC0C6297BD497002B5D67 /* LandmarkList.swift */,
 				0F8FC0C2297BCE1D002B5D67 /* LandmarkRow.swift */,
+				0FDEB437299A15A9003EEA1A /* LandmarkSettings.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 			files = (
 				033FA64B298B054A005A72D7 /* ContentView.swift in Sources */,
 				033FA65E298B0765005A72D7 /* Profile.swift in Sources */,
+				0FDEB438299A15A9003EEA1A /* LandmarkSettings.swift in Sources */,
 				033FA65A298B0688005A72D7 /* MapView.swift in Sources */,
 				033FA655298B0688005A72D7 /* SwiftUI_TutorialsApp.swift in Sources */,
 				033FA663298B08A4005A72D7 /* LandmarkDetail.swift in Sources */,
